@@ -167,9 +167,13 @@ print("1")
 animals = {"whale", "dog", "cat", "giraffe"}
 pets = {"dog", "cat"}
 
-wild = animals.difference(pets)
+not_pets = animals.difference(pets)
 
+# 2
+wishlist = {"earpods", "notebook", "handgloves"}
+cart = {"cat food", "book", "earpods"}
 
-
+print(wishlist.difference(cart))
+print(cart.difference(wishlist))
 
 
