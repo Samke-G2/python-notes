@@ -31,7 +31,7 @@ print(are_friends)
 
 
 print("     ")
-print("EXAMPLES")
+print("EXAMPLES (PART 1)")
 
 #1
 print("- - - - - - ")
@@ -53,4 +53,123 @@ print(pets.issubset(animals))
 
 
 
-# Set Operations (PART 2)
+# Set Operations (PART 2)                       18/02/2025                          16:37
+
+# We can join two sets using 'union()'.
+print("      ")
+print("Example 2.1: Using union() ")
+
+classmates = {"Sue", "Paul"}
+friends = {"Don", "Sue"}
+
+print(classmates.union(friends))
+# Union() gives us a new set without duplicates, even if some  elements are present in both original sets.
+
+
+# Similarly, we can use 'intersection()' to create a set of elements that are present in both sets
+print("      ")
+print("Example 2.2: Using 'intersection()' ")
+
+classmates = {"Sue", "Luke", "Paul"}
+friends = {"Don", "Sue", "Luke"}
+
+print(classmates.intersection(friends))
+
+
+# While union() gives us all elements of the two sets, 
+# intersection() gives us only the common ones
+print("      ")
+print("Example 2.3: The difference between intersection and union")
+
+print("Union: ")
+print(classmates.union(friends))
+
+print("Intersection: ")
+print(classmates.intersection(friends))
+
+
+# We can save the sets given by union() and intersection() in variables 
+print("      ")
+print("Example 2.4: Saving the result sets in variables")
+
+everybody = classmates.union(friends)
+
+common = classmates.intersection(friends)
+
+
+print("      ")
+print("EXAMPLES (PART 2)")
+
+# 1
+print("- - -  - - -")
+print("1")
+
+arrivals = {"JL5273", "NH5753"}
+departures = {"AA5827", "BA4616"}
+
+all_flights = arrivals.union(departures)
+print(all_flights)
+
+
+# 2
+print("- - - - - - -")
+print("2")
+
+visited = {"Paris", "New York", "Tokyo"}
+holiday_plans = {"Rome", "Paris"}
+
+destinations = visited.intersection(holiday_plans)
+print(destinations)
+
+
+
+# Set Operations (PART 3)                       18/02/2025                          17:29
+
+# To get a set of elements that are pressent in one set, but not another, we use the 'difference()' instruction
+print("      ")
+print("Example 3.1: using 'difference()' ")
+
+print(classmates.difference(friends))
+
+
+# Using difference() gives us the elements that the left set has, but the right set doesn't.
+print("      ")
+print("Example 3.2: how the 'difference()' instruction works")
+
+team_1 = {"Alpha", "Beta", "Theta"}
+team_2 = {"Alpha", "Beta", "Charlie", "Delta"}
+
+print(team_1.difference(team_2))
+
+# Changing the order of the sets inputed changes the results of using 'difference()'
+print("      ")
+print("Example 3.3: changing the order of inputs in 'difference()' ")
+
+print(team_2.difference(team_1))
+
+
+# We can save the set obtained in a variable 
+print("      ")
+print("Example 3.4: Saving the set obtained in a variable")
+
+friends_not_classmates = friends.difference(classmates)
+print(friends_not_classmates)
+
+
+
+print("      ")
+print("EXAMPLES (PART 3)") 
+
+# 1
+print("- - - - - - - ")
+print("1")
+
+animals = {"whale", "dog", "cat", "giraffe"}
+pets = {"dog", "cat"}
+
+wild = animals.difference(pets)
+
+
+
+
+
