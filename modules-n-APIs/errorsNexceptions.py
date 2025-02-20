@@ -34,7 +34,7 @@
 
 
 
-# Errors and Exceptions (Part 2)                  19/02/2025                         16:23
+# Errors and Exceptions (Part 3)                  19/02/2025                         16:23
 
 # The traceback is best read from bottom to top, to understand what went wrong with our code.
 # If Python cannot find a module, a ModuleNotFoundError exception will be raised.
