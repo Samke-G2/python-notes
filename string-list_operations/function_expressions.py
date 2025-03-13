@@ -44,3 +44,35 @@ authors_update = [add_comma(name) for name in authors]
 print(authors_update)
 
 
+
+print("- - - - - -")
+print("EXAMPLES")
+
+# 1
+print("- - - - - ")
+print("1 ")
+
+words = ["apple", "alligator", "abracadabra", "avatar"]
+
+def has_double_a(word):
+    a_count = word.count("a")
+    return a_count
+
+double_a = [has_double_a(word) for word in words]
+
+print(double_a)
+
+# 2
+print("- - - - - ")
+print("2 ")
+
+scores = [40, 12, 83]
+
+def passed(scores):
+    with_bonus = scores + 10
+    return with_bonus > 90
+
+passing_scores = [passed(score) for score in scores]
+
+print(passing_scores)
+    
