@@ -36,3 +36,43 @@ item_prices = [120, 25, 40]
 under_50 = [price for price in item_prices if price < 50]
 
 print(under_50)
+
+# 2
+print("- - - - - ")
+print("2 ")
+
+humidity = [40, 35, 20, 70]
+
+too_low = [level for level in humidity if level < 30]
+
+print(too_low)
+
+# 3
+print(" - - - - -")
+print("3 ")
+
+websites = ["nytimes.com", "lemondes.fr", "economist.co.za"]
+
+french = [website for website in websites if website.count(".fr") > 0]
+
+print(french)
+
+# 4
+print("- - - - - ")
+print("4 ")
+
+humidity_percent = [40, 35, 20, 70]
+
+ideal = [level for level in humidity_percent if level >= 30 and level <= 50]
+
+print(ideal)
+
+# 5
+print("- - - - - ")
+print("5 ")
+
+book_codes = ["FH2010", "BV1999", "LB2010"]
+
+book_2010 = [code for code in book_codes if code.count("2010") == 1]
+
+print(book_2010)
