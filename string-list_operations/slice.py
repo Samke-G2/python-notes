@@ -117,6 +117,53 @@ countries = ["Andorra", "Brazil", "China", "Denmark", "Egypt"]
 print(countries[::-3])
 
 
-# 
+# An empty list, rather than en error, will be returned if there are no matching indeces.
+# The stop always works from the start value
+print(" ")
+print("Example 12: An empty list with slice notation")
+
+scores = [100, 200, 300, 400, 500]
+
+print(f"No matching indeces: {scores[0:2:-1]}")
+print(f"With matching indeces: {scores[4:1:-1]}")
+
+
+print(" ")
+print("EXAMPLES")
+
+# 1
+print("- - - - -")
+print("1")
+
+scores = [50, 60, 30, 100, 200]
+print(scores[-2:])
+
+
+# 2
+print("- - - - -")
+print("2")
+
+readings = [78, 83, 80, 82, 85]
+first_3 = readings[:3]
+print(first_3)
+
+
+# 3
+print(" ")
+print("3")
+
+countdown = ["3", "pause", "2", "pause", "1"]
+numbers_only = countdown[::2]
+print(numbers_only)
+
+
+# 4
+print(" ")
+print("4")
+
+ratings = [3, 4, 2, 5, 1, 5, 4, 5]
+print(ratings[-1:2:-2])
+
+
 
 
