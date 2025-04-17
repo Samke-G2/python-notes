@@ -77,6 +77,8 @@ else:
 # We then add an except block to catch potential errors.
 # Here, we take the error from the error object and use it as error.
 
+# We should call 'raise_for_status' on the response object to identify errors that we can then catch via the except block.
+
 try:
     response = requests.get(url)
     response.raise_for_status()
