@@ -136,3 +136,30 @@ data2 = {
 
 response2 = requests.patch(url, json=data, timeout=3.0)
 
+
+print("EXAMPLES")
+
+# 1
+print("- - - - -")
+print("1")
+
+# write the Python code to send a DELETE request to remove the lesson with the identification 1001
+response = requests.delete("https://mimo.org/lesson/1001")
+print(response.status_code)
+
+# 2
+print(" ")
+print("2")
+
+# write the code to send a PUT request using Python to replace the user with the identification 17
+# the user's name should be changed to Bob and the username should be changed to bobbyman
+
+url = "https://mimo.org/users/17"
+data = {
+    "username": "bobbyman", 
+    "name": "Bob"
+}
+
+response = requests.put(url, json = data)
+print(response.status_code)
+
