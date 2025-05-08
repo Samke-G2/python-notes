@@ -18,6 +18,7 @@ class VirtualPet2:
     color = "brown"
     legs = 4
     lives = "9"
+    wagging_tail = True
     
 fluffy = VirtualPet2()
 
@@ -30,10 +31,27 @@ skippy = VirtualPet2()
 print(skippy.legs)
 
 # We can thus access all of the variables we created in the class definition
+print(" ")
+print("Example 2 continued")
+
+print(skippy.wagging_tail)
+print(skippy.color)
 
 
+print("EXAMPLES") 
 
+# 1
+print("- - - - -")
+print(" 1")
 
+class Pokemon:
+    name = "squirtle"
+    weight = 19.8
+    color = "blue"
+    
+pokemon = Pokemon()
+print(pokemon.name)
+print(pokemon.weight)
 
 
 
