@@ -41,17 +41,33 @@ print("Example 3: Using a class method")
 rocky.bark()
 
 
+print("EXAMPLES")
+
+# 1
+print("- - - - -")
+print("1 ")
+
+class Dog:
+    def __init__(self):
+        self.color = "brown"
+    def print_color(self):
+        print(self.color)
+        
+spot = Dog()
+spot.print_color()
 
 
+# 2
+print("- - - - -")
+print("2")
 
-
-
-
-
-
-
-
-
-
-
-
+class Pokemon:
+    name = "Pikachu"
+    color = "yellow"
+    
+    def introduce(self):
+        print("Hi")
+        print("I am" + self.name)
+        
+pikachu = Pokemon()
+pikachu.introduce()
